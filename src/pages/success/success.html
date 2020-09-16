@@ -1,0 +1,19 @@
+<ion-content padding>
+
+    <div class="title-header">CoronAlert</div>
+  
+    <div class="lottie-content"><lottie-animation-success></lottie-animation-success></div>
+
+    <div class="coronas-stats" *ngIf="contactType == 'sms'">Un message d'urgence a été envoyé à {{hopital.Nom}} situé à {{hopital.Distance}}KM de distance ! Vous serez contacté dans les plus brefs délais.</div>
+    <div class="coronas-stats" *ngIf="contactType == 'phone'">Un appel d'urgence a été émis à {{hopital.Nom}} situé à {{hopital.Distance}}KM de distance !</div>
+    <div class="coronas-stats" *ngIf="contactType == 'direct'">Un appel d'urgence a été émis !</div>
+  
+    <br>
+  
+    <button ion-button class="flat-button" role="success" (click)="back()">
+      <ion-icon name="alert-circle-outline"></ion-icon> 
+      Retour
+    </button>
+  
+  </ion-content>
+  

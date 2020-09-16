@@ -1,0 +1,32 @@
+<!--
+  Generated template for the CallPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Choisissez un hôpital</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-list>
+      <ion-list-header *ngIf="lat && lng">
+        Hopitaux les plus proches de {{lat}};{{lng}}
+      </ion-list-header>
+
+      <ion-item *ngFor="let hopital of hopitaux" (click)="contact(hopital)">
+        <ion-avatar item-start>
+            <ion-badge color="dark">{{hopital?.Distance}}<br>KM</ion-badge>
+        </ion-avatar>
+        <ion-label>
+          <h2>{{hopital?.Nom}}</h2>
+          <h3>{{hopital?.Numero}}</h3>
+          <p>{{hopital?.Adresse}}</p>
+        </ion-label>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>

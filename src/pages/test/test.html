@@ -1,0 +1,39 @@
+<!--
+  Generated template for the TestPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Test en ligne du COVID-19</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- Steps -->
+<ion-content padding *ngFor="let question of questions; let i = index" [hidden]="step != i+1 || viewResult === true">
+    Question {{step}}/{{stepMax}}
+    
+    <h3>{{question}}</h3>
+
+    <button ion-button block class="btn-test-n" (click)="chose('yes')">Oui</button> 
+    
+    <button ion-button block class="btn-test" color="danger" (click)="chose('no')">Non</button>
+
+    <small (click)="back()" *ngIf="step > 1">Retour</small>
+    
+</ion-content>
+
+<!-- Result -->
+<ion-content padding [hidden]="viewResult === false">
+    <h3>La probabilité que vous ayez le COVID-19 est de {{scoreProb}}%
+    
+    <br><br><br>
+    <small>Attention, ce test est basé sur un algorithme et ne peut en aucun cas remplacer un véritable examen médical !</small></h3>
+
+    <button ion-button class="flat-button" role="danger" (click)="call()">
+        <ion-icon name="alert-circle-outline"></ion-icon> 
+        Urgence
+    </button>
+
+</ion-content>

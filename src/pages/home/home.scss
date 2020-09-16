@@ -1,0 +1,122 @@
+page-home {
+
+    ion-content {
+        // background-image: url('https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1318/2020/03/11101107/GettyImages-1203426591-818x460.jpg');
+        // background-size: cover;  
+        background-color: #ae0405 !important;
+        text-align: center;
+        color:#fff !important;
+    }
+
+    .ion-float-right {
+        // float:right;
+        // text-align: right;
+        color:#fff;
+        padding:0;
+        margin:0;
+        font-size: 3.4vw;
+    }
+    .ion-float-right div {
+        margin-top:1vh
+    }
+    .ion-float-right span {
+        margin: 0 6px;
+        cursor: pointer;
+    }
+
+    .title-header {
+        font-size: 8vw;
+        padding: 5vh 0 5vh 0;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .coronas-stats {
+        color:#ccc;
+        margin:0vh 0 10vh 0;
+    }
+
+    ul {
+        margin:8vh 0;
+        padding:0;
+    }
+    li {
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+
+    .flat-button  {
+        margin-top:10vh !important;
+        width: 50%; height: 60px;
+
+    }
+
+    .blink_me {
+        //animation: blinker 1s linear infinite;
+
+        position: relative;
+        animation: bounce 1.2s ease-out;
+    }
+    
+    @keyframes blinker {
+        20% {
+            color:gold
+        }
+        40% {
+            color:white
+        }
+    }
+
+    @keyframes bounce {
+        0% {
+          transform:translateY(-100%);
+          opacity: 0;
+        }
+        5% {
+            transform:translateY(-100%);
+          opacity: 0;
+        }
+        15% {
+            transform:translateY(0);
+          padding-bottom: 5px;
+        }
+        30% {
+            transform:translateY(-50%);
+        }
+        40% {
+            transform:translateY(0%);
+          padding-bottom: 6px;
+        }
+        50% {
+            transform:translateY(-30%);
+        }
+        70% {
+            transform:translateY(0%);
+          padding-bottom: 7px;
+        }
+        80% {
+            transform:translateY(-15%);
+        }
+        90% {
+            transform:translateY(0%);
+            padding-bottom: 8px;
+        }
+        95% {
+            transform:translateY(-7%);
+        }
+        97% {
+            transform:translateY(0%);
+            padding-bottom: 9px;
+        }
+        99% {
+            transform:translateY(-3%);
+        }
+        100% {
+            transform:translateY(0);
+            padding-bottom: 9px;
+          opacity: 1;
+        }
+      }
+}

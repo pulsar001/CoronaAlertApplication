@@ -1,0 +1,7 @@
+{
+  "name": "CoronAlert",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

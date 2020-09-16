@@ -1,0 +1,22 @@
+<!--
+  Generated template for the NewsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Actualités</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-card *ngFor="let news of feedNews" (click)="web(news.link)">
+        <ion-card-header>
+          <ion-card-title>{{news.title}}</ion-card-title>
+          <small>{{news.pubDate}}</small>
+        </ion-card-header>
+    </ion-card>
+
+</ion-content>

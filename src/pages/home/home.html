@@ -1,0 +1,32 @@
+<ion-content padding>
+  
+  <ion-col class="ion-float-right">
+    <div>
+      <span (click)="gestes()">Prévenir</span> | <span (click)="news()">News</span> | <span (click)="map()">Carte</span> | <span (click)="test()" class="blink_me">Faire le test</span> 
+    </div>
+  </ion-col>
+
+  <div class="title-header">CoronAlert</div>
+
+  <div class="coronas-stats" *ngIf="dataApi?.cases && dataApi?.deaths && dataApi?.recovered">Cas: {{dataApi?.cases|number}} - Morts: {{dataApi?.deaths|number}} - Rétablis: {{dataApi?.recovered|number}}</div>
+
+  <!-- Avez-vous été en contact avec une personne qui vient de pays à risque ou si avez été en contact avec une personne infectée
+  <br> -->
+  Ou avez-vous ces symptômes ?
+  <ul>
+    <li>Fièvre</li>
+    <li>Toux sèche</li>
+    <li>Courbatures</li>
+    <li>Maux de tête</li>
+  </ul>
+
+  Si oui, appeler tout de suite les urgences !
+
+  <br>
+
+  <button ion-button class="flat-button" role="danger" (click)="call()">
+    <ion-icon name="alert-circle-outline"></ion-icon> 
+    Urgence
+  </button>
+
+</ion-content>

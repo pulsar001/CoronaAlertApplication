@@ -1,0 +1,22 @@
+<!--
+  Generated template for the GestesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Les gestes à avoir</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-card *ngFor="let geste of gestes">
+      <iframe [src]="geste.trustedVideoUrl" frameborder="0" allowfullscreen></iframe>
+      <ion-card-header>
+        <ion-card-title>{{geste.title}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,47 @@
+[
+  {
+    "Nom": "Hopital Général de Kinshasa",
+    "Numero": "+243 823 419 373",
+    "Adresse": "Ave De L'hopital, Kinshasa 1",
+    "Latitude": -4.31074,
+    "Longitude": 15.3048,
+    "Type": "Hôpital",
+    "Urgence": "oui"
+  },
+  {
+    "Nom": "Hôpital du Cinquantenaire",
+    "Numero": "+243 844 430 396",
+    "Adresse": "Avenue pierre mulele 10",
+    "Latitude": -4.3371,
+    "Longitude": 15.296,
+    "Type": "Clinique",
+    "Urgence": "oui"
+  },
+  {
+    "Nom": "Centre Hospitalier Roi Baudouin",
+    "Numero": "+243 854 878 767",
+    "Adresse": "Av. Bolenge 1",
+    "Latitude": -4.41758,
+    "Longitude": 15.3911,
+    "Type": "Hôpital",
+    "Urgence": "non"
+  },
+  {
+    "Nom": "Hôpital Saint Joseph",
+    "Numero": "+243 854 878 767",
+    "Adresse": "N1 Kinshasa",
+    "Latitude": -4.3502,
+    "Longitude": 15.335,
+    "Type": "Hôpital",
+    "Urgence": "oui"
+  },
+  {
+    "Nom": "Cliniques Universitaires  Kinshasa",
+    "Numero": "+243 818 415 034",
+    "Adresse": "Kimwenza 12 Mont Ngafula",
+    "Latitude": -4.50743,
+    "Longitude": 15.2788,
+    "Type": "Clinique",
+    "Urgence": "oui"
+  }
+]

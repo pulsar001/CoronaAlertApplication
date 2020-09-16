@@ -1,0 +1,42 @@
+page-success {
+    ion-content {
+        // background-image: url('https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1318/2020/03/11101107/GettyImages-1203426591-818x460.jpg');
+        // background-size: cover;  
+        background-color: #8bc34a !important;
+        text-align: center;
+        color:#fff !important;
+    }
+
+    .title-header {
+        font-size: 30px;
+        padding: 10vh 0 10vh 0;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .coronas-stats {
+        margin:10vh 0 5vh 0;
+    }
+
+    ul {
+        margin:10vh 0;
+        padding:0;
+    }
+    li {
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+
+    .flat-button  {
+        margin-top:10vh !important;
+        width: 50%; height: 60px;
+
+    }
+
+    .lottie-content {
+        width:auto;
+        margin:0 auto;
+    }
+}
